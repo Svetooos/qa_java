@@ -4,10 +4,10 @@ import java.util.List;
 
 public class Cat {
 
-    Predator predator;
+    FelineInterface felineInterface;
 
-    public Cat(Feline feline) {
-        this.predator = feline;
+    public Cat(FelineInterface felineInterface) {
+        this.felineInterface = felineInterface;
     }
 
     public String getSound() {
@@ -15,7 +15,6 @@ public class Cat {
     }
 
     public List<String> getFood() throws Exception {
-        return predator.eatMeat();
+        return felineInterface.eatMeat();
     }
-
 }
